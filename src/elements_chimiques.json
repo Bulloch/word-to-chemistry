@@ -1,0 +1,582 @@
+[
+  {
+      "Numero_atomique": 1,
+      "Nom": "Hydrogene",
+      "Symbole_chimique": "H"
+    },
+    {
+      "Numero_atomique": 2,
+      "Nom": "Helium",
+      "Symbole_chimique": "He"
+    },
+    {
+      "Numero_atomique": 3,
+      "Nom": "Lithium",
+      "Symbole_chimique": "Li"
+    },
+    {
+      "Numero_atomique": 4,
+      "Nom": "Beryllium",
+      "Symbole_chimique": "Be"
+    },
+    {
+      "Numero_atomique": 5,
+      "Nom": "Bore",
+      "Symbole_chimique": "B"
+    },
+    {
+      "Numero_atomique": 6,
+      "Nom": "Carbone",
+      "Symbole_chimique": "C"
+    },
+    {
+      "Numero_atomique": 7,
+      "Nom": "Azote",
+      "Symbole_chimique": "N"
+    },
+    {
+      "Numero_atomique": 8,
+      "Nom": "Oxygene",
+      "Symbole_chimique": "O"
+    },
+    {
+      "Numero_atomique": 9,
+      "Nom": "Fluor",
+      "Symbole_chimique": "F"
+    },
+    {
+      "Numero_atomique": 10,
+      "Nom": "Neon",
+      "Symbole_chimique": "Ne"
+    },
+    {
+      "Numero_atomique": 11,
+      "Nom": "Sodium",
+      "Symbole_chimique": "Na"
+    },
+    {
+      "Numero_atomique": 12,
+      "Nom": "Magnesium",
+      "Symbole_chimique": "Mg"
+    },
+    {
+      "Numero_atomique": 13,
+      "Nom": "Aluminium",
+      "Symbole_chimique": "Al"
+    },
+    {
+      "Numero_atomique": 14,
+      "Nom": "Silicium",
+      "Symbole_chimique": "Si"
+    },
+    {
+      "Numero_atomique": 15,
+      "Nom": "Phosphore",
+      "Symbole_chimique": "P"
+    },
+    {
+      "Numero_atomique": 16,
+      "Nom": "Soufre",
+      "Symbole_chimique": "S"
+    },
+    {
+      "Numero_atomique": 17,
+      "Nom": "Chlore",
+      "Symbole_chimique": "Cl"
+    },
+    {
+      "Numero_atomique": 18,
+      "Nom": "Argon",
+      "Symbole_chimique": "Ar"
+    },
+    {
+      "Numero_atomique": 19,
+      "Nom": "Potassium",
+      "Symbole_chimique": "K"
+    },
+    {
+      "Numero_atomique": 20,
+      "Nom": "Calcium",
+      "Symbole_chimique": "Ca"
+    },
+    {
+      "Numero_atomique": 21,
+      "Nom": "Scandium",
+      "Symbole_chimique": "Sc"
+    },
+    {
+      "Numero_atomique": 22,
+      "Nom": "Titane",
+      "Symbole_chimique": "Ti"
+    },
+    {
+      "Numero_atomique": 23,
+      "Nom": "Vanadium",
+      "Symbole_chimique": "V"
+    },
+    {
+      "Numero_atomique": 24,
+      "Nom": "Chrome",
+      "Symbole_chimique": "Cr"
+    },
+    {
+      "Numero_atomique": 25,
+      "Nom": "Manganese",
+      "Symbole_chimique": "Mn"
+    },
+    {
+      "Numero_atomique": 26,
+      "Nom": "Fer",
+      "Symbole_chimique": "Fe"
+    },
+    {
+      "Numero_atomique": 27,
+      "Nom": "Cobalt",
+      "Symbole_chimique": "Co"
+    },
+    {
+      "Numero_atomique": 28,
+      "Nom": "Nickel",
+      "Symbole_chimique": "Ni"
+    },
+    {
+      "Numero_atomique": 29,
+      "Nom": "Cuivre",
+      "Symbole_chimique": "Cu"
+    },
+    {
+      "Numero_atomique": 30,
+      "Nom": "Zinc",
+      "Symbole_chimique": "Zn"
+    },
+    {
+      "Numero_atomique": 31,
+      "Nom": "Gallium",
+      "Symbole_chimique": "Ga"
+    },
+    {
+      "Numero_atomique": 32,
+      "Nom": "Germanium",
+      "Symbole_chimique": "Ge"
+    },
+    {
+      "Numero_atomique": 33,
+      "Nom": "Arsenic",
+      "Symbole_chimique": "As"
+    },
+    {
+      "Numero_atomique": 34,
+      "Nom": "Selenium",
+      "Symbole_chimique": "Se"
+    },
+    {
+      "Numero_atomique": 35,
+      "Nom": "Brome",
+      "Symbole_chimique": "Br"
+    },
+    {
+      "Numero_atomique": 36,
+      "Nom": "Krypton",
+      "Symbole_chimique": "Kr"
+    },
+    {
+      "Numero_atomique": 37,
+      "Nom": "Rubidium",
+      "Symbole_chimique": "Rb"
+    },
+    {
+      "Numero_atomique": 38,
+      "Nom": "Strontium",
+      "Symbole_chimique": "Sr"
+    },
+    {
+      "Numero_atomique": 39,
+      "Nom": "Yttrium",
+      "Symbole_chimique": "Y"
+    },
+    {
+      "Numero_atomique": 40,
+      "Nom": "Zirconium",
+      "Symbole_chimique": "Zr"
+    },
+    {
+      "Numero_atomique": 41,
+      "Nom": "Niobium",
+      "Symbole_chimique": "Nb"
+    },
+    {
+      "Numero_atomique": 42,
+      "Nom": "Molybdene",
+      "Symbole_chimique": "Mo"
+    },
+    {
+      "Numero_atomique": 43,
+      "Nom": "Technetium",
+      "Symbole_chimique": "Tc"
+    },
+    {
+      "Numero_atomique": 44,
+      "Nom": "Ruthenium",
+      "Symbole_chimique": "Ru"
+    },
+    {
+      "Numero_atomique": 45,
+      "Nom": "Rhodium",
+      "Symbole_chimique": "Rh"
+    },
+    {
+      "Numero_atomique": 46,
+      "Nom": "Palladium",
+      "Symbole_chimique": "Pd"
+    },
+    {
+      "Numero_atomique": 47,
+      "Nom": "Argent",
+      "Symbole_chimique": "Ag"
+    },
+    {
+      "Numero_atomique": 48,
+      "Nom": "Cadmium",
+      "Symbole_chimique": "Cd"
+    },
+    {
+      "Numero_atomique": 49,
+      "Nom": "Indium",
+      "Symbole_chimique": "In"
+    },
+    {
+      "Numero_atomique": 50,
+      "Nom": "etain",
+      "Symbole_chimique": "Sn"
+    },
+    {
+      "Numero_atomique": 51,
+      "Nom": "Antimoine",
+      "Symbole_chimique": "Sb"
+    },
+    {
+      "Numero_atomique": 52,
+      "Nom": "Tellure",
+      "Symbole_chimique": "Te"
+    },
+    {
+      "Numero_atomique": 53,
+      "Nom": "Iode",
+      "Symbole_chimique": "I"
+    },
+    {
+      "Numero_atomique": 54,
+      "Nom": "Xenon",
+      "Symbole_chimique": "Xe"
+    },
+    {
+      "Numero_atomique": 55,
+      "Nom": "Cesium",
+      "Symbole_chimique": "Cs"
+    },
+    {
+      "Numero_atomique": 56,
+      "Nom": "Baryum",
+      "Symbole_chimique": "Ba"
+    },
+    {
+      "Numero_atomique": 57,
+      "Nom": "Lanthane",
+      "Symbole_chimique": "La"
+    },
+    {
+      "Numero_atomique": 58,
+      "Nom": "Cerium",
+      "Symbole_chimique": "Ce"
+    },
+    {
+      "Numero_atomique": 59,
+      "Nom": "Praseodyme",
+      "Symbole_chimique": "Pr"
+    },
+    {
+      "Numero_atomique": 60,
+      "Nom": "Neodyme",
+      "Symbole_chimique": "Nd"
+    },
+    {
+      "Numero_atomique": 61,
+      "Nom": "Promethium",
+      "Symbole_chimique": "Pm"
+    },
+    {
+      "Numero_atomique": 62,
+      "Nom": "Samarium",
+      "Symbole_chimique": "Sm"
+    },
+    {
+      "Numero_atomique": 63,
+      "Nom": "Europium",
+      "Symbole_chimique": "Eu"
+    },
+    {
+      "Numero_atomique": 64,
+      "Nom": "Gadolinium",
+      "Symbole_chimique": "Gd"
+    },
+    {
+      "Numero_atomique": 65,
+      "Nom": "Terbium",
+      "Symbole_chimique": "Tb"
+    },
+    {
+      "Numero_atomique": 66,
+      "Nom": "Dysprosium",
+      "Symbole_chimique": "Dy"
+    },
+    {
+      "Numero_atomique": 67,
+      "Nom": "Holmium",
+      "Symbole_chimique": "Ho"
+    },
+    {
+      "Numero_atomique": 68,
+      "Nom": "Erbium",
+      "Symbole_chimique": "Er"
+    },
+    {
+      "Numero_atomique": 69,
+      "Nom": "Thulium",
+      "Symbole_chimique": "Tm"
+    },
+    {
+      "Numero_atomique": 70,
+      "Nom": "Ytterbium",
+      "Symbole_chimique": "Yb"
+    },
+    {
+      "Numero_atomique": 71,
+      "Nom": "Lutecium",
+      "Symbole_chimique": "Lu"
+    },
+    {
+      "Numero_atomique": 72,
+      "Nom": "Hafnium",
+      "Symbole_chimique": "Hf"
+    },
+    {
+      "Numero_atomique": 73,
+      "Nom": "Tantale",
+      "Symbole_chimique": "Ta"
+    },
+    {
+      "Numero_atomique": 74,
+      "Nom": "Tungstene",
+      "Symbole_chimique": "W"
+    },
+    {
+      "Numero_atomique": 75,
+      "Nom": "Rhenium",
+      "Symbole_chimique": "Re"
+    },
+    {
+      "Numero_atomique": 76,
+      "Nom": "Osmium",
+      "Symbole_chimique": "Os"
+    },
+    {
+      "Numero_atomique": 77,
+      "Nom": "Iridium",
+      "Symbole_chimique": "Ir"
+    },
+    {
+      "Numero_atomique": 78,
+      "Nom": "Platine",
+      "Symbole_chimique": "Pt"
+    },
+    {
+      "Numero_atomique": 79,
+      "Nom": "Or",
+      "Symbole_chimique": "Au"
+    },
+    {
+      "Numero_atomique": 80,
+      "Nom": "Mercure",
+      "Symbole_chimique": "Hg"
+    },
+    {
+      "Numero_atomique": 81,
+      "Nom": "Thallium",
+      "Symbole_chimique": "Tl"
+    },
+    {
+      "Numero_atomique": 82,
+      "Nom": "Plomb",
+      "Symbole_chimique": "Pb"
+    },
+    {
+      "Numero_atomique": 83,
+      "Nom": "Bismuth",
+      "Symbole_chimique": "Bi"
+    },
+    {
+      "Numero_atomique": 84,
+      "Nom": "Polonium",
+      "Symbole_chimique": "Po"
+    },
+    {
+      "Numero_atomique": 85,
+      "Nom": "Astate",
+      "Symbole_chimique": "At"
+    },
+    {
+      "Numero_atomique": 86,
+      "Nom": "Radon",
+      "Symbole_chimique": "Rn"
+    },
+    {
+      "Numero_atomique": 87,
+      "Nom": "Francium",
+      "Symbole_chimique": "Fr"
+    },
+    {
+      "Numero_atomique": 88,
+      "Nom": "Radium",
+      "Symbole_chimique": "Ra"
+    },
+    {
+      "Numero_atomique": 89,
+      "Nom": "Actinium",
+      "Symbole_chimique": "Ac"
+    },
+    {
+      "Numero_atomique": 90,
+      "Nom": "Thorium",
+      "Symbole_chimique": "Th"
+    },
+    {
+      "Numero_atomique": 91,
+      "Nom": "Protactinium",
+      "Symbole_chimique": "Pa"
+    },
+    {
+      "Numero_atomique": 92,
+      "Nom": "Uranium",
+      "Symbole_chimique": "U"
+    },
+    {
+      "Numero_atomique": 93,
+      "Nom": "Neptunium",
+      "Symbole_chimique": "Np"
+    },
+    {
+      "Numero_atomique": 94,
+      "Nom": "Plutonium",
+      "Symbole_chimique": "Pu"
+    },
+    {
+      "Numero_atomique": 95,
+      "Nom": "Americium",
+      "Symbole_chimique": "Am"
+    },
+    {
+      "Numero_atomique": 96,
+      "Nom": "Curium",
+      "Symbole_chimique": "Cm"
+    },
+    {
+      "Numero_atomique": 97,
+      "Nom": "Berkelium",
+      "Symbole_chimique": "Bk"
+    },
+    {
+      "Numero_atomique": 98,
+      "Nom": "Californium",
+      "Symbole_chimique": "Cf"
+    },
+    {
+      "Numero_atomique": 99,
+      "Nom": "Einsteinium",
+      "Symbole_chimique": "Es"
+    },
+    {
+      "Numero_atomique": 100,
+      "Nom": "Fermium",
+      "Symbole_chimique": "Fm"
+    },
+    {
+      "Numero_atomique": 101,
+      "Nom": "Mendelevium",
+      "Symbole_chimique": "Md"
+    },
+    {
+      "Numero_atomique": 102,
+      "Nom": "Nobelium",
+      "Symbole_chimique": "No"
+    },
+    {
+      "Numero_atomique": 103,
+      "Nom": "Lawrencium",
+      "Symbole_chimique": "Lr"
+    },
+    {
+      "Numero_atomique": 104,
+      "Nom": "Rutherfordium",
+      "Symbole_chimique": "Rf"
+    },
+    {
+      "Numero_atomique": 105,
+      "Nom": "Dubnium",
+      "Symbole_chimique": "Db"
+    },
+    {
+      "Numero_atomique": 106,
+      "Nom": "Seaborgium",
+      "Symbole_chimique": "Sg"
+    },
+    {
+      "Numero_atomique": 107,
+      "Nom": "Bohrium",
+      "Symbole_chimique": "Bh"
+    },
+    {
+      "Numero_atomique": 108,
+      "Nom": "Hassium",
+      "Symbole_chimique": "Hs"
+    },
+    {
+      "Numero_atomique": 109,
+      "Nom": "Meitnerium",
+      "Symbole_chimique": "Mt"
+    },
+    {
+      "Numero_atomique": 110,
+      "Nom": "Darmstadtium",
+      "Symbole_chimique": "Ds"
+    },
+    {
+      "Numero_atomique": 111,
+      "Nom": "Roentgenium",
+      "Symbole_chimique": "Rg"
+    },
+    {
+      "Numero_atomique": 112,
+      "Nom": "Copernicium",
+      "Symbole_chimique": "Cn"
+    },
+    {
+      "Numero_atomique": 113,
+      "Nom": "Nihonium",
+      "Symbole_chimique": "Nh"
+    },
+    {
+      "Numero_atomique": 114,
+      "Nom": "Flerovium",
+      "Symbole_chimique": "Fl"
+    },
+    {
+      "Numero_atomique": 115,
+      "Nom": "Moscovium",
+      "Symbole_chimique": "Mc"
+    },
+    {
+      "Numero_atomique": 116,
+      "Nom": "Livermorium",
+      "Symbole_chimique": "Lv"
+    }
+  ]
