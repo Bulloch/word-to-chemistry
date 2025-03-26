@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import CombinationGroup from './components/CombinationGroup';
 import InputSection from './components/InputSection';
 import ChemicalElement from './components/ChemicalElement';
-import { combinationToString, findElementMatches, createUnknownElement, initializeElements } from './utils/chemUtils';
+import { initializeElements } from './utils/chemUtils';
 
 const chems = initializeElements();
 
@@ -21,7 +21,8 @@ class Main extends Component {
             showAllCombinations: false,
             allCombinations: [],
             collapsedStates: {}, // nouvel état pour suivre les combinaisons réduites
-            excludedCombinations: [] // Pour stocker les combinaisons à exclure
+            excludedCombinations: [], // Pour stocker les combinaisons à exclure
+            theme: localStorage.getItem('theme') || 'dark'
         };
     }
 
@@ -29,6 +30,9 @@ class Main extends Component {
         chems.forEach(chem => {
             chem.Symbole_chimique = chem.Symbole_chimique.toLowerCase()
         })
+        document.body.className = this.state.theme;
+        // Appliquer le thème initial à l'App
+        document.querySelector('.App').className = `App ${this.state.theme}`;
     }
 
     combinationToString = (combination) => {
@@ -41,15 +45,24 @@ class Main extends Component {
         }));
     }
 
+    toggleTheme = () => {
+        const newTheme = this.state.theme === 'dark' ? 'light' : 'dark';
+        this.setState({ theme: newTheme });
+        localStorage.setItem('theme', newTheme);
+        document.querySelector('.App').className = `App ${newTheme}`;
+    }
+
     render() {
         return(
-            <div id="main-body">
+            <div id="main-body" className={this.state.theme}>
                 <InputSection 
                     text={this.state.textToTranslate}
                     onInputChange={this.handleInputChange}
                     onToggleCombinations={this.toggleCombinations}
                     onFindNext={this.findNextCombination}
                     showAllCombinations={this.state.showAllCombinations}
+                    theme={this.state.theme}
+                    onThemeToggle={this.toggleTheme}
                 />
                 {this.state.showAllCombinations ? (
                     this.state.allCombinations.map((combination, index) => (

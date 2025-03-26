@@ -1,23 +1,71 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import HelpModal from './HelpModal';
+import SearchHistory from './SearchHistory';
 
 const InputSection = ({ 
     text, 
     onInputChange, 
     onToggleCombinations, 
     onFindNext, 
-    showAllCombinations 
+    showAllCombinations,
+    theme,
+    onThemeToggle 
 }) => {
     const [isHelpOpen, setIsHelpOpen] = useState(false);
+    const [searchHistory, setSearchHistory] = useState([]);
+    const [showError, setShowError] = useState(false);
+
+    useEffect(() => {
+        if (text) {
+            setSearchHistory(prev => [...new Set([text, ...prev])].slice(0, 5));
+        }
+    }, [text]);
+
+    const handleInputChange = (e) => {
+        const value = e.target.value;
+        if (value.length > 30) {
+            setShowError(true);
+            setTimeout(() => setShowError(false), 3000);
+            return;
+        }
+        onInputChange(e);
+    };
 
     return (
-        <>
-            <div className="input-controls">
-                <input type="text" id="inputText" onChange={onInputChange}/>
+        <div className="input-section">
+            <div className="top-controls">
+                <button 
+                    className="theme-toggle"
+                    onClick={onThemeToggle}
+                    aria-label="Toggle theme"
+                >
+                    {theme === 'dark' ? '☀️' : '🌙'}
+                </button>
                 <button className="help-button" onClick={() => setIsHelpOpen(true)}>
                     ?
                 </button>
             </div>
+
+            <div className="input-controls">
+                <input 
+                    type="text" 
+                    id="inputText" 
+                    onChange={handleInputChange}
+                    placeholder="Entrez un mot..."
+                    maxLength={30}
+                />
+                {showError && (
+                    <div className="error-message">
+                        Le texte ne doit pas dépasser 30 caractères
+                    </div>
+                )}
+            </div>
+
+            <SearchHistory 
+                history={searchHistory} 
+                onSelect={(text) => onInputChange({ target: { value: text }})} 
+            />
+
             <button onClick={onToggleCombinations} id="more">
                 {showAllCombinations ? "Show Best" : "Show All"}
             </button>
@@ -35,7 +83,7 @@ const InputSection = ({
                 </>
             )}
             <HelpModal isOpen={isHelpOpen} onClose={() => setIsHelpOpen(false)} />
-        </>
+        </div>
     );
 };
 
