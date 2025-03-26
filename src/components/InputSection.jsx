@@ -4,6 +4,7 @@ import SearchHistory from './SearchHistory';
 
 const InputSection = ({ 
     text, 
+    score, 
     onInputChange, 
     onToggleCombinations, 
     onFindNext, 
@@ -29,6 +30,14 @@ const InputSection = ({
             return;
         }
         onInputChange(e);
+    };
+
+    const clearHistory = () => {
+        setSearchHistory([]);
+    };
+
+    const deleteHistoryItem = (index) => {
+        setSearchHistory(prev => prev.filter((_, i) => i !== index));
     };
 
     return (
@@ -63,7 +72,9 @@ const InputSection = ({
 
             <SearchHistory 
                 history={searchHistory} 
-                onSelect={(text) => onInputChange({ target: { value: text }})} 
+                onSelect={(text) => onInputChange({ target: { value: text }})}
+                onClear={clearHistory}
+                onDelete={deleteHistoryItem}
             />
 
             <button onClick={onToggleCombinations} id="more">
@@ -78,7 +89,7 @@ const InputSection = ({
                 <>
                     <h1 id="entry-text" className="visible">{text}</h1>
                     <h1 id="result-score" className="visible">
-                        result : <p>{text}</p>
+                        result : <p>{score}</p>
                     </h1>
                 </>
             )}

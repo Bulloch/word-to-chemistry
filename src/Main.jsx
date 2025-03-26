@@ -57,6 +57,7 @@ class Main extends Component {
             <div id="main-body" className={this.state.theme}>
                 <InputSection 
                     text={this.state.textToTranslate}
+                    score={this.state.listNumber}
                     onInputChange={this.handleInputChange}
                     onToggleCombinations={this.toggleCombinations}
                     onFindNext={this.findNextCombination}

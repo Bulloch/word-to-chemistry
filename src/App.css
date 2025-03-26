@@ -534,18 +534,124 @@ button#next-combination:hover {
 }
 
 .history-item {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
     background: rgba(97, 218, 251, 0.2);
     border: 1px solid rgba(97, 218, 251, 0.3);
-    padding: 0.3rem 0.8rem;
+    padding: 0.3rem 2rem 0.3rem 0.8rem;
     border-radius: 15px;
     font-size: 0.9rem;
     cursor: pointer;
     transition: all 0.2s ease;
 }
 
+.history-item span {
+    cursor: pointer;
+}
+
 .history-item:hover {
     background: rgba(97, 218, 251, 0.4);
     transform: translateY(-2px);
+}
+
+.history-item-delete {
+    position: absolute;
+    right: 0.4rem;
+    padding: 0;
+    width: 16px;
+    height: 16px;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 50%;
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    opacity: 0.5;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.history-item:hover .history-item-delete {
+    opacity: 1;
+}
+
+.history-item-delete:hover {
+    color: #ff4d4d;
+    transform: scale(1.2);
+}
+
+/* Search History Modifications */
+.history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.history-controls {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.history-clear, 
+.history-collapse,
+.history-item-delete {
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    padding: 4px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.history-clear:hover,
+.history-collapse:hover,
+.history-item-delete:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.history-collapse {
+    transition: transform 0.3s ease;
+}
+
+.history-collapse.collapsed {
+    transform: rotate(-90deg);
+}
+
+.history-content {
+    max-height: 200px;
+    opacity: 1;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.history-content.collapsed {
+    max-height: 0;
+    opacity: 0;
+    margin: 0;
+}
+
+.history-item-wrapper {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.history-item-delete {
+    font-size: 1.2rem;
+    padding: 2px 6px;
+    opacity: 0;
+    color: #ff4d4d;
+}
+
+.history-item-wrapper:hover .history-item-delete {
+    opacity: 0.7;
 }
 
 /* Error Message */

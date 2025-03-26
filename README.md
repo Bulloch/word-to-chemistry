@@ -99,6 +99,40 @@ npm test
 
 Des tests unitaires sont disponibles pour les composants principaux et les utilitaires.
 
+## Tests et Couverture
+
+Le projet dispose d'une suite complète de tests unitaires couvrant :
+
+### Composants React
+- InputSection : Gestion des entrées, validation et contrôles
+- SearchHistory : Historique de recherche avec gestion d'état
+- ChemicalElement : Affichage des éléments chimiques
+- CombinationGroup : Gestion des groupes de combinaisons
+
+### Utilitaires
+- chemUtils : Fonctions de manipulation des éléments chimiques
+- Conversion de données
+- Recherche et filtrage
+
+Pour exécuter les tests avec couverture :
+```bash
+npm test -- --coverage
+```
+
+## Guide de Contribution
+
+Pour contribuer au projet :
+1. Fork le projet
+2. Créez une branche pour votre fonctionnalité : `git checkout -b feature/nouvelle-fonctionnalite`
+3. Committez vos changements : `git commit -m 'feat: Ajout d'une nouvelle fonctionnalité'`
+4. Poussez vers la branche : `git push origin feature/nouvelle-fonctionnalite`
+5. Ouvrez une Pull Request
+
+Assurez-vous que vos modifications :
+- Passent tous les tests existants
+- Maintiennent ou améliorent la couverture de tests
+- Suivent les conventions de code du projet
+
 ## Note Personnelle
 
 Ce projet représente une exploration personnelle des possibilités offertes par React et GitHub Copilot dans le contexte d'une application éducative. Il reflète mon parcours d'apprentissage et peut servir d'exemple pour d'autres développeurs intéressés par l'utilisation de l'IA dans leur processus de développement.
