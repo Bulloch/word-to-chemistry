@@ -22,17 +22,13 @@ class Main extends Component {
             allCombinations: [],
             collapsedStates: {}, // nouvel état pour suivre les combinaisons réduites
             excludedCombinations: [], // Pour stocker les combinaisons à exclure
-            theme: localStorage.getItem('theme') || 'dark'
         };
     }
 
     componentDidMount() {
         chems.forEach(chem => {
             chem.Symbole_chimique = chem.Symbole_chimique.toLowerCase()
-        })
-        document.body.className = this.state.theme;
-        // Appliquer le thème initial à l'App
-        document.querySelector('.App').className = `App ${this.state.theme}`;
+        });
     }
 
     combinationToString = (combination) => {
@@ -45,16 +41,9 @@ class Main extends Component {
         }));
     }
 
-    toggleTheme = () => {
-        const newTheme = this.state.theme === 'dark' ? 'light' : 'dark';
-        this.setState({ theme: newTheme });
-        localStorage.setItem('theme', newTheme);
-        document.querySelector('.App').className = `App ${newTheme}`;
-    }
-
     render() {
         return(
-            <div id="main-body" className={this.state.theme}>
+            <div id="main-body">
                 <InputSection 
                     text={this.state.textToTranslate}
                     score={this.state.listNumber}
@@ -62,8 +51,6 @@ class Main extends Component {
                     onToggleCombinations={this.toggleCombinations}
                     onFindNext={this.findNextCombination}
                     showAllCombinations={this.state.showAllCombinations}
-                    theme={this.state.theme}
-                    onThemeToggle={this.toggleTheme}
                 />
                 {this.state.showAllCombinations ? (
                     this.state.allCombinations.map((combination, index) => (
@@ -77,12 +64,14 @@ class Main extends Component {
                         />
                     ))
                 ) : (
-                    this.state.listChems.map((elem, index) => (
-                        <ChemicalElement
-                            key={index}
-                            element={elem}
-                        />
-                    ))
+                    <div className="elements-list-container">
+                        {this.state.listChems.map((elem, index) => (
+                            <ChemicalElement
+                                key={index}
+                                element={elem}
+                            />
+                        ))}
+                    </div>
                 )}
             </div>
         );
@@ -112,7 +101,7 @@ class Main extends Component {
     }
 
     findAllCombinations = (text) => {
-        text = text.toLowerCase();
+        text = text.toLowerCase().replace(/\s+/g, '');  // Supprime tous les espaces
         const results = [];
         const seenCombinations = new Set();
         
@@ -274,9 +263,9 @@ class Main extends Component {
     handleInputChange = (event) => {
         let tempTxt = event.target.value;
         this.setState({
-            textToTranslate: tempTxt
+            textToTranslate: tempTxt  // Garde les espaces dans l'état pour l'affichage
         });
-        if (tempTxt === "") {
+        if (tempTxt.trim() === "") {  // Vérifie si la chaîne est vide après suppression des espaces
             this.setState({
                 listNumber: "Empty starting string"
             });
@@ -292,7 +281,7 @@ class Main extends Component {
     }
 
     processText = (tempTxt) => {
-        tempTxt = tempTxt.toLowerCase();
+        tempTxt = tempTxt.toLowerCase().replace(/\s+/g, '');  // Supprime tous les espaces
         const n = tempTxt.length;
         // dp[i] stockera la meilleure combinaison jusqu'à la position i
         const dp = Array(n + 1).fill(null);

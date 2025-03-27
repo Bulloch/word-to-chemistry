@@ -8,9 +8,7 @@ const InputSection = ({
     onInputChange, 
     onToggleCombinations, 
     onFindNext, 
-    showAllCombinations,
-    theme,
-    onThemeToggle 
+    showAllCombinations
 }) => {
     const [isHelpOpen, setIsHelpOpen] = useState(false);
     const [searchHistory, setSearchHistory] = useState([]);
@@ -43,13 +41,6 @@ const InputSection = ({
     return (
         <div className="input-section">
             <div className="top-controls">
-                <button 
-                    className="theme-toggle"
-                    onClick={onThemeToggle}
-                    aria-label="Toggle theme"
-                >
-                    {theme === 'dark' ? '☀️' : '🌙'}
-                </button>
                 <button className="help-button" onClick={() => setIsHelpOpen(true)}>
                     ?
                 </button>
